@@ -1,0 +1,131 @@
+/* Put any custom CSS styles here.  */
+/* Be sure to delete the <style> tag in index.html if you want to use this stylesheet. */
+:root {
+  --white: #fff;
+  --light-gray: #f9fafb;
+  --dark-gray: #d2d6db;
+  --light-green: #f0fdf4;
+  --dark-green: #15803d;
+  --medium-green: #bbf7d0;
+  --text-primary: #171717;
+  --text-secondary: #525252;
+  --blue: #4338ca;
+}
+body {
+  margin: 0;
+  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  min-height: 100vh;
+
+  background: linear-gradient(
+    to bottom right,
+    var(--light-gray),
+    var(--dark-gray)
+  );
+  height: 100vh;
+  width: 100vw;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  padding-top: 120px;
+}
+
+.card {
+  max-width: 340px;
+  height: 504px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--white);
+  box-shadow: 1px 0px 3px var(--dark-gray);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.img__container {
+  height: 288px;
+}
+.card__img {
+  height: 100%;
+  width: 100%;
+}
+
+.card__content {
+  padding: 24px 16px;
+  flex-grow: 1;
+}
+
+.card__content--title {
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.card__content--text {
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+}
+
+.card__content--tag {
+  background-color: var(--light-green);
+  border: 1px solid var(--medium-green);
+  border-radius: 9999px;
+  color: var(--dark-green);
+  font-size: 14px;
+  display: inline-block;
+  padding: 2px 8px;
+}
+
+.card__footer--cta {
+  background: none;
+  color: var(--blue);
+  display: inline-block;
+  border: none;
+  padding-left: 16px;
+  margin-bottom: 24px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card__footer--cta span {
+  font-weight: 600;
+}
+
+.credits {
+  color: #777;
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.credits a {
+  color: #000;
+  font-weight: bold;
+}
