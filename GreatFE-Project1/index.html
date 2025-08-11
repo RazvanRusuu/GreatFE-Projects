@@ -14,22 +14,27 @@
     <link rel="icon" href="img/favicon.ico" sizes="any" />
   </head>
   <body>
-    <!-- Add your site or application content here -->
     <div class="main">
-      <figure class="card">
-        <div class="card__title">
-          <img class="card__title--img" src="/img/profile-thumbnail.png" />
+      <article aria-label="User tesimonial by Sarah Dole" class="card">
+        <header class="card__title">
+          <img
+            class="card__title--img"
+            src="/img/profile-thumbnail.png"
+            alt="Profile picture of Sarah Dole"
+          />
           <div class="card__title--user">
-            <h4 class="card__title--user-name">Sarah Dole</h4>
-            <span class="card__title--user-tag">@sarahdole</span>
+            <h2 class="card__title--user-name">Sarah Dole</h2>
+            <p class="card__title--user-tag" aria-label="Username">
+              @sarahdole
+            </p>
           </div>
-        </div>
-        <figcaption class="card__content">
+        </header>
+        <p class="card__content">
           I've been searching for high-quality abstract images for my design
           projects, and I'm thrilled to have found this platform. The variety
           and depth of creativity are astounding!
-        </figcaption>
-      </figure>
+        </p>
+      </article>
     </div>
 
     <!-- Attribute this challenge to yourself! -->
@@ -41,11 +46,10 @@
         >GreatFrontEnd Projects</a
       >. Built by
       <a
-        href="https://www.greatfrontend.com/projects/u/username"
+        href="https://www.greatfrontend.com/projects/u/razvanrusu"
         target="_blank"
-        >Your Name</a
+        >Razvan Rusu</a
       >.
     </div>
-    <script src="js/index.js"></script>
   </body>
 </html>
