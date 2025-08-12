@@ -1,0 +1,122 @@
+:root {
+  --dark-gray: #d2d6db;
+  --light-gray: #f9fafb;
+  --background-primary: #fff;
+  --text-primary: #171717;
+  --text-secondary: #525252;
+  --text-brand: #4338ca;
+}
+body {
+  margin: 0;
+  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  min-height: 100vh;
+
+  background: linear-gradient(-45deg, var(--dark-gray), var(--light-gray));
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  width: 100%;
+  min-height: inherit;
+  padding-top: 200px;
+}
+
+.card {
+  width: 340px;
+  height: 428px;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 24px 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-primary);
+  box-shadow: 1px 2px 1px var(--dark-gray);
+}
+
+.card__content {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.card__content h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card__content span {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.card__content p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 24px;
+
+  color: var(--text-secondary);
+}
+
+.card__cta--container {
+  text-align: center;
+  margin-top: 40px;
+  align-self: stretch;
+}
+
+.card__cta {
+  border: none;
+  padding: 14px 0;
+  width: 100%;
+  background-color: var(--text-brand);
+  color: var(--background-primary);
+  font-size: 16px;
+  font-family: "Nato Sans";
+  font-weight: 500;
+  letter-spacing: 2px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card__cta:hover {
+  background-color: #584aeb;
+}
+
+.card__footer {
+  margin-top: auto;
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  height: 36px;
+}
+
+.card__footer svg {
+  fill: var(--text-brand);
+}
+
+.credits {
+  color: #777;
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.credits a {
+  color: #000;
+  font-weight: bold;
+}
